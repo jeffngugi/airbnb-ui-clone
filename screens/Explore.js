@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, SafeAreaView, Platform, StatusBar, ScrollView, Image, Dimensions} from 'react-native';
+import {View, Text, SafeAreaView, Platform, StatusBar, ScrollView, Image, Dimensions, Animated} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { TextInput } from 'react-native-gesture-handler';
-import Category from '../components/Explore/Category'
-import Home from '../components/Explore/Home'
+import Category from '../components/Explore/Category';
+import Home from '../components/Explore/Home';
+import Tag from '../components/Explore/Tag';
 const Explore = () => {
 
     const [headerHeight, setheaderHeight] = useState(80)
@@ -12,7 +13,7 @@ const Explore = () => {
 
     useEffect(() => {
          if(Platform.OS == "android"){
-             setheaderHeight(100)
+             setheaderHeight(120)
          }
     }, [])
 
@@ -30,9 +31,20 @@ const Explore = () => {
                             style={{flex:1, fontWeight:'700', backgroundColor:'white', }}
                         />
                     </View>
+
+                <Animated.View style={{flexDirection:'row', marginHorizontal:20, position:'relative',top:10}}>
+                    <Tag name='Guest'/>
+                    <Tag name='Dates' />
+                </Animated.View>
+
                 </View>
                 <ScrollView
                    scrollEventThrottle={16} 
+                //    onScroll={Animated.event(
+                //        [
+                //            {nativeEvent:{contentOffSet:{y:scrollY}}}
+                //        ]
+                //    )}
                 >
                     <View style={{flex:1, backgroundColor:'white'}}>
                         <Text style={{fontSize:24, fontWeight:'700', paddingHorizontal:20}}>What can we help you find, Jeff?</Text>
