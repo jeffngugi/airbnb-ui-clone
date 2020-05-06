@@ -1024,6 +1024,13 @@
     react-is "^16.13.0"
     use-subscription "^1.4.0"
 
+"@react-navigation/material-top-tabs@^5.1.15":
+  version "5.1.15"
+  resolved "https://registry.yarnpkg.com/@react-navigation/material-top-tabs/-/material-top-tabs-5.1.15.tgz#bf7bb379840036983b6ecf70266cb1b755a8671f"
+  integrity sha512-x/xF7qFJG9GYYJ92nttsIpj1fs2JisYsSLAJDo7DI19/NNHDPGoEZMlctW+nMuGzOVx0ZNu3HHnY00dztMrx/A==
+  dependencies:
+    color "^3.1.2"
+
 "@react-navigation/native@^5.2.3":
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.2.3.tgz#2e2ec88396d2be96d11f9430b4af6dcea34029b0"
@@ -5249,6 +5256,11 @@ react-native-star-rating@^1.1.0:
     react-native-animatable "^1.2.4"
     react-native-button "^2.3.0"
     react-native-vector-icons "^4.5.0"
+
+react-native-tab-view@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.14.0.tgz#dd801f82fdb8e92fce9688b78d13923f3a5a2b3f"
+  integrity sha512-Z7XAM3NsMB96c17e9EAveunk7SUgilXWwVUTmWI1u/+p2SeOMUOB87z+//UXrcVlD1e9BPweR73q7dq7krTzTg==
 
 react-native-vector-icons@^4.5.0:
   version "4.6.0"
