@@ -1,6 +1,7 @@
 package com.airbnb;
-
+import android.os.Bundle;
 import com.facebook.react.ReactActivity;
+import org.devio.rn.splashscreen.SplashScreen; // here
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +13,11 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "airBnb";
   }
+
+ @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this);
+    super.onCreate(savedInstanceState);
+  }
+
 }

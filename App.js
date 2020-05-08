@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {StyleSheet, View, Text} from 'react-native'
@@ -10,9 +10,14 @@ import Profile from './screens/Profile';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon  from 'react-native-vector-icons/FontAwesome';
 const Tab = createBottomTabNavigator();
+import SplashScreen from 'react-native-splash-screen';
 
 
 const App = () => {
+  useEffect(() => {
+    //write Code to Perform async here...
+    SplashScreen.hide();
+  }, [])
   return (
     <NavigationContainer style={styles.conntainer}>
       <Tab.Navigator

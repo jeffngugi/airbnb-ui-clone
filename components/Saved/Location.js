@@ -1,9 +1,9 @@
 import React from 'react';
-import {Image, View, Text, StyleSheet, Dimensions} from 'react-native';
+import {Image, View, Text, StyleSheet, Dimensions, TouchableOpacity} from 'react-native';
 
 const Location = () => {
     return (
-        <View style={styles.itemSaved}>
+        <TouchableOpacity style={styles.itemSaved}>
         <View style={{flex:2}}>
             <Image source={require('../../assets/home.jpg')}  style={styles.itemImage} />
         </View>
@@ -12,7 +12,7 @@ const Location = () => {
             <Text style={{fontWeight:'bold', color:'black'}}>Kitengela</Text>
             <Text style={{fontWeight:'700', color:'grey'}}>1 stay</Text>
         </View>
-    </View>
+    </TouchableOpacity>
     )
 }
 

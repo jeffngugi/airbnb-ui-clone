@@ -76,7 +76,7 @@ const Explore = () => {
                            <Home width={width} name='Kikuyu bedsitter' rating={5} location='Nakuru' price='18' beds='2'/>
                            <Home width={width} name='Kikuyu bedsitter' rating={2} location='Kikuyu' price='32' beds='3'/>
                            <Home width={width} name='Kikuyu bedsitter' rating={3} location='Naivasha' price='22' beds='2'/>
-                           <Home width={width} name='Kikuyu bedsitter' rating={1} location='Kilimani' price='10' beds='1'/>
+                           <Home width={width} name='Kikuyu bedsitter' rating={1.5} location='Kilimani' price='10' beds='1'/>
                            <Home width={width} name='Kikuyu bedsitter' rating={4} location='Karen' price='48' beds='1'/>
                         </View>
                     </View>
