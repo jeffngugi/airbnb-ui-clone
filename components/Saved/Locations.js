@@ -1,9 +1,14 @@
 import React from 'react';
 import {Image, View, Text, StyleSheet, Dimensions, TouchableOpacity} from 'react-native';
 
-const Location = () => {
+const Location = ({navigation}) => {
     return (
-        <TouchableOpacity style={styles.itemSaved}>
+        <TouchableOpacity
+             style={styles.itemSaved}
+             onPress={() => {
+                navigation.navigate('SavedLocation');
+              }}
+        >
         <View style={{flex:2}}>
             <Image source={require('../../assets/home.jpg')}  style={styles.itemImage} />
         </View>

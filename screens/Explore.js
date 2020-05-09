@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { TextInput } from 'react-native-gesture-handler';
 import Category from '../components/Explore/Category';
 import Home from '../components/Explore/Home';
-import Tag from '../components/Explore/Tag';
+import Tag from '../components/reusables/Tag';
 const Explore = () => {
 
     const [headerHeight, setheaderHeight] = useState(80)
@@ -33,8 +33,8 @@ const Explore = () => {
                     </View>
 
                 <Animated.View style={{flexDirection:'row', marginHorizontal:20, position:'relative',top:10}}>
-                    <Tag name='Guest'/>
-                    <Tag name='Dates' />
+                    <Tag name='Guest' background='white' border='#dddddd'/>
+                    <Tag name='Dates' background='white' border='#dddddd'/>
                 </Animated.View>
 
                 </View>
